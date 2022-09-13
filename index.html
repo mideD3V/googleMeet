@@ -18,48 +18,68 @@
           <img src="/images/google_meet.png" alt="google meet logo" />
           <p>Meet</p>
         </div>
-        <div class="rigth-nav">
+        <div class="right-nav">
+          <span class="date" id="date" onload="date()"></span>
           <span class="material-symbols-outlined">help</span>
           <span class="material-symbols-outlined">sms_failed</span>
           <span class="material-symbols-outlined">settings</span>
           <span class="material-symbols-outlined">apps</span>
-          <span class="avartar"></span>
+          <span class="avartar"> av</span>
         </div>
       </nav>
     </header>
     <main>
       <div class="left-cont">
-        <p>Premium video meetings.</p>
-        <p>Now free for everyone.</p>
-        <p>
-          We re-engineered the service that we built for secure busines meetings, Google Meet, to make it free and available for all
+        <p class="hero">
+          Premium video meetings. <br />
+          Now free for everyone.
+        </p>
+
+        <p class="sub-hero">
+          We re-engineered the service that we built for secure busines
+          meetings, Google Meet, to make it free and available for all
         </p>
         <div class="btn-ctn">
           <button>
             <span class="material-symbols-outlined">video_call </span>
             New Meeting
           </button>
-          
-          <div class="input">
-              <span class="material-symbols-outlined">keyboard</span>
-          <input type="text" placeholder="Enter a code or link" />
+
+          <div class="input-field">
+            <span class="material-symbols-outlined">keyboard</span>
+            <input type="text" placeholder="Enter a code or link" />
           </div>
         </div>
         <hr />
-        <p><a href="#"> Learn more</a> about Google Meet</p>
+        <p class="learn-more"><a href="#"> Learn more</a> about Google Meet</p>
       </div>
 
+      <!-- SLIDER - USER IMAGE -->
       <div class="right-cont">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
         <img src="/images/user_edu.svg" alt="user image" />
-        <p class="get-link">
-            Get a link that you can share
+        <!-- <img src="/images/user_edu2.svg" alt="user image" />
+        <img src="/images/user_edu3.svg" alt="user image" /> -->
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <p class="get-link">Get a link that you can share</p>
+
+        <p class="note">
+          Click <b>New Meeting</b> to get a link that you can send <br />
+          to people that you want to meet with
         </p>
 
-        <p>
-          Click New Meeting to get a link that you can send to people that you want to meet with
-        </p>
-        
-      </div>
+        <!-- image dots/circle -->
+        <div>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
     </main>
     <footer></footer>
   </body>
